@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		6DC5E12423DA0B29005AFC44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E12323DA0B29005AFC44 /* AppDelegate.swift */; };
 		6DC5E12623DA0B29005AFC44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E12523DA0B29005AFC44 /* SceneDelegate.swift */; };
-		6DC5E12823DA0B29005AFC44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E12723DA0B29005AFC44 /* ViewController.swift */; };
 		6DC5E12B23DA0B29005AFC44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC5E12923DA0B29005AFC44 /* Main.storyboard */; };
 		6DC5E12D23DA0B2A005AFC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC5E12C23DA0B2A005AFC44 /* Assets.xcassets */; };
 		6DC5E13023DA0B2A005AFC44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC5E12E23DA0B2A005AFC44 /* LaunchScreen.storyboard */; };
+		6DC5E13A23DA0E49005AFC44 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E13923DA0E49005AFC44 /* Person.swift */; };
+		6DC5E13E23DA10E4005AFC44 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E13D23DA10E4005AFC44 /* PersonController.swift */; };
+		6DC5E14323DA157B005AFC44 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E14223DA157B005AFC44 /* NetworkError.swift */; };
+		6DC5E14723DA1B93005AFC44 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E14623DA1B93005AFC44 /* PeopleTableViewController.swift */; };
+		6DC5E14923DA2385005AFC44 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC5E14823DA2385005AFC44 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6DC5E12023DA0B29005AFC44 /* HallOfFame31.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HallOfFame31.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC5E12323DA0B29005AFC44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DC5E12523DA0B29005AFC44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6DC5E12723DA0B29005AFC44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6DC5E12A23DA0B29005AFC44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC5E12C23DA0B2A005AFC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DC5E12F23DA0B2A005AFC44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DC5E13123DA0B2A005AFC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC5E13923DA0E49005AFC44 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6DC5E13D23DA10E4005AFC44 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		6DC5E14223DA157B005AFC44 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		6DC5E14623DA1B93005AFC44 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		6DC5E14823DA2385005AFC44 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		6DC5E12223DA0B29005AFC44 /* HallOfFame31 */ = {
 			isa = PBXGroup;
 			children = (
+				6DC5E14223DA157B005AFC44 /* NetworkError.swift */,
+				6DC5E12923DA0B29005AFC44 /* Main.storyboard */,
+				6DC5E13C23DA10D5005AFC44 /* ModelController */,
+				6DC5E13B23DA10C9005AFC44 /* ViewController */,
+				6DC5E13823DA0DED005AFC44 /* Model */,
+				6DC5E13723DA0B45005AFC44 /* Resources */,
+			);
+			path = HallOfFame31;
+			sourceTree = "<group>";
+		};
+		6DC5E13723DA0B45005AFC44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				6DC5E12323DA0B29005AFC44 /* AppDelegate.swift */,
 				6DC5E12523DA0B29005AFC44 /* SceneDelegate.swift */,
-				6DC5E12723DA0B29005AFC44 /* ViewController.swift */,
-				6DC5E12923DA0B29005AFC44 /* Main.storyboard */,
 				6DC5E12C23DA0B2A005AFC44 /* Assets.xcassets */,
 				6DC5E12E23DA0B2A005AFC44 /* LaunchScreen.storyboard */,
 				6DC5E13123DA0B2A005AFC44 /* Info.plist */,
+				6DC5E14823DA2385005AFC44 /* UIViewControllerExtension.swift */,
 			);
-			path = HallOfFame31;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DC5E13823DA0DED005AFC44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DC5E13923DA0E49005AFC44 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DC5E13B23DA10C9005AFC44 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6DC5E14623DA1B93005AFC44 /* PeopleTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6DC5E13C23DA10D5005AFC44 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				6DC5E13D23DA10E4005AFC44 /* PersonController.swift */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC5E12823DA0B29005AFC44 /* ViewController.swift in Sources */,
+				6DC5E13E23DA10E4005AFC44 /* PersonController.swift in Sources */,
+				6DC5E13A23DA0E49005AFC44 /* Person.swift in Sources */,
 				6DC5E12423DA0B29005AFC44 /* AppDelegate.swift in Sources */,
 				6DC5E12623DA0B29005AFC44 /* SceneDelegate.swift in Sources */,
+				6DC5E14723DA1B93005AFC44 /* PeopleTableViewController.swift in Sources */,
+				6DC5E14923DA2385005AFC44 /* UIViewControllerExtension.swift in Sources */,
+				6DC5E14323DA157B005AFC44 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HallOfFame31/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HallOfFame31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HallOfFame31/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HallOfFame31/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
